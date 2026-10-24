@@ -1,0 +1,63 @@
+Winner,Loser,Prediction_Value,Correct
+Delaware,Middle Tennessee State,12.23,FALSE
+Florida International,Jacksonville State,-1,FALSE
+Kennesaw State,Missouri State,-1,FALSE
+Sam Houston,Western Kentucky,-1,FALSE
+Texas State,Colorado State,-1,TRUE
+East Carolina,UAB,25.81,FALSE
+Georgia Southern,Old Dominion,32.540000000000006,TRUE
+Appalachian State,Coastal Carolina,-10.219999999999999,TRUE
+Memphis,Tulane,10.609999999999996,FALSE
+Purdue,Washington,1,FALSE
+Miami (OH),Akron,1,TRUE
+Alabama,Tennessee,-1,FALSE
+Texas Tech,Arizona State,1,TRUE
+Arkansas,Vanderbilt,3.5500000000000025,TRUE
+Arkansas State,Southern Mississippi,1.5199999999999996,TRUE
+Georgia,Auburn,12.26,FALSE
+Bowling Green,Ball State,-7.290000000000001,FALSE
+Clemson,Charleston Southern,15.960000000000006,TRUE
+Temple,Charlotte,-3.2100000000000017,FALSE
+Cincinnati,West Virginia,31.740000000000002,FALSE
+Texas A&M,Citadel,10.57,TRUE
+Stanford,Elon,8.68,TRUE
+Texas,Florida,4.659999999999999,FALSE
+Army,Florida Atlantic,14.08,TRUE
+Miami (FL),Florida State,-1,TRUE
+Fresno State,San Diego State,1,FALSE
+James Madison,Georgia State,1,TRUE
+Virginia Tech,Georgia Tech,-1,TRUE
+Kansas State,Kansas,-1,TRUE
+South Florida,Kent State,26.29,TRUE
+Oklahoma,Kentucky,-1.209999999999998,FALSE
+Louisiana Tech,Louisiana-Monroe,28.54,TRUE
+Louisville,Syracuse,18.590000000000003,TRUE
+Massachusetts,Buffalo,1,FALSE
+LSU,Mississippi State,27,FALSE
+Missouri,Ole Miss,9.66,FALSE
+UTSA,Navy,-1,FALSE
+Oregon,Nebraska,-0.6900000000000048,TRUE
+North Dakota State,Nevada,1,TRUE
+Air Force,Nevada-Las Vegas,1,TRUE
+New Mexico,Hawaii,-1,TRUE
+Duke,North Carolina,-10.84,FALSE
+Wyoming,Northern Illinois,21.260000000000005,TRUE
+Northwestern,Michigan State,-1,TRUE
+Notre Dame,BYU,-0.240000000000002,FALSE
+Ohio,Sacramento State,-1,TRUE
+Ohio State,Indiana,1,TRUE
+Houston,Oklahoma State,28.919999999999995,TRUE
+Penn State,Michigan,20.959999999999997,FALSE
+Pitt,Boston College,-1,FALSE
+Maryland,Rutgers,-1,FALSE
+San Jose State,UTEP,-1,TRUE
+Baylor,Texas Christian,1,FALSE
+Toledo,Eastern Michigan,1,TRUE
+Louisiana,Troy,-1,TRUE
+Tulsa,Rice,1,TRUE
+Utah,Colorado,-0.94000000000000306,TRUE
+Virginia,SMU,1,FALSE
+Wake Forest,California,-1,TRUE
+Oregon State,Washington State,-1,TRUE
+Western Michigan,Central Michigan,-1,TRUE
+UCLA,Wisconsin,-1,TRUE
