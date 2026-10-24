@@ -1,0 +1,76 @@
+Winner,Loser,Prediction_Value,Correct
+Pitt,Syracuse,12.23,TRUE
+Miami (FL),Wake Forest,20.139999999999997,TRUE
+Oregon,Portland State,1,TRUE
+Houston,Texas Tech,-5.450000000000003,FALSE
+Alabama,Florida State,27.820000000000004,TRUE
+Appalachian State,Charlotte,25.81,TRUE
+Arizona,Northern Illinois,32.540000000000006,TRUE
+Kansas,Arizona State,-10.219999999999999,FALSE
+Baylor,Louisiana Tech,10.609999999999996,TRUE
+Boise State,South Dakota,1,TRUE
+Boston College,Maine,1,TRUE
+Colorado State,Brigham Young,-1,FALSE
+California,Wagner,1,TRUE
+UCF,Georgia State,3.5500000000000025,TRUE
+Central Michigan,Wyoming,1.5199999999999996,TRUE
+Cincinnati,Miami (OH),12.26,TRUE
+North Carolina,Clemson,-7.290000000000001,FALSE
+Connecticut,Southern Mississippi,15.960000000000006,TRUE
+Coastal Carolina,Delaware,-3.2100000000000017,FALSE
+Duke,Stanford,31.740000000000002,TRUE
+East Carolina,Old Dominion,10.57,TRUE
+Florida,Auburn,8.68,TRUE
+Florida Atlantic,Florida International,4.659999999999999,TRUE
+Fresno State,San Jose State,14.08,TRUE
+Georgia,Arkansas,35.839999999999996,TRUE
+Georgia Tech,Mercer,1,TRUE
+Illinois,Southern Illinois,1,TRUE
+Indiana,Western Kentucky,42.730000000000004,TRUE
+Iowa,Northern Iowa,1,TRUE
+Iowa State,Bowling Green,26.29,TRUE
+Georgia Southern,Jacksonville State,-1.209999999999998,FALSE
+James Madison,San Diego State,28.54,TRUE
+Kansas State,Tulane,18.590000000000003,TRUE
+Kentucky,Texas A&M,1.1800000000000033,TRUE
+Liberty,Ball State,27,TRUE
+Louisiana,UAB,9.66,TRUE
+Louisville,Southern Methodist,1,TRUE
+Missouri State,Marshall,-0.6900000000000048,FALSE
+Massachusetts,Stonehill,1,TRUE
+Memphis,Tennessee-Martin,1,TRUE
+Michigan,UTEP,31.2,TRUE
+Nevada,Middle Tennessee State,-10.84,FALSE
+Minnesota,Akron,21.260000000000005,TRUE
+Louisiana State,Mississippi,-1,FALSE
+South Carolina,Mississippi State,-0.240000000000002,FALSE
+Missouri,Troy,23.339999999999996,TRUE
+Nebraska,North Dakota,1,TRUE
+North Dakota State,Sacramento State,28.919999999999995,TRUE
+Northwestern,Colorado,20.959999999999997,TRUE
+Notre Dame,Michigan State,32.68,TRUE
+Ohio State,Kent State,50.57000000000001,TRUE
+New Mexico,Oklahoma,-10.319999999999997,FALSE
+Oklahoma State,Murray State,1,TRUE
+Oregon State,Montana,1,TRUE
+Penn State,Buffalo,25.53,TRUE
+Sam Houston,Nicholls State,1,TRUE
+Ohio,South Alabama,-0.94000000000000306,FALSE
+South Florida,Delaware State,1,TRUE
+Louisiana-Monroe,Southeastern Louisiana,-1,FALSE
+Rutgers,Southern California,-1,FALSE
+Tennessee,Kennesaw State,22.41,TRUE
+Texas,UTSA,20.77,TRUE
+Texas Christian,Arkansas State,16.45,TRUE
+North Texas,Texas State,-6.850000000000009,FALSE
+Toledo,Temple,8.380000000000004,TRUE
+Tulsa,East Texas A&M,1,TRUE
+UCLA,Purdue,16.62,TRUE
+Utah,Utah State,35.309999999999995,TRUE
+North Carolina State,Vanderbilt,-8.490000000000002,FALSE
+Virginia Tech,Maryland,11.140000000000008,TRUE
+Washington,Eastern Washington,1,TRUE
+Washington State,Duquesne,1,TRUE
+Virginia,West Virginia,-5.640000000000003,FALSE
+Western Michigan,Rice,12.739999999999998,TRUE
+Wisconsin,Eastern Michigan,26.07,TRUE
