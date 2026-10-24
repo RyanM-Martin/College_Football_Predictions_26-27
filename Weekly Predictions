@@ -1,0 +1,65 @@
+Example of base Code for weekly predictions
+'''{r}
+library(dplyr)
+library(stringr)
+
+
+
+Team_name_corrections<- c(
+  "Alabama-Birmingham" = "UAB",
+  "Brigham Young" = "BYU",                      
+  "Louisiana State" = "LSU",          
+  "Mississippi" = "Ole Miss",                          
+  "Pittsburgh" = "Pitt",                  
+  "Southern California" = "USC",      
+  "Southern Methodist" = "SMU",        
+  "Texas-El Paso" = "UTEP",              
+  "Texas-San Antonio"  = "UTSA",     
+  "Central Florida" = "UCF"        
+) #the data from the website uses different spellings for these schools in the stats, and in the scedule databases.
+
+'''
+
+Week 3 Predictions
+
+'''
+week3prediction <- data.frame(
+  Winner = character(nrow(Schedule3)),
+  Loser = character(nrow(Schedule3)),
+  Prediction_Value = integer(nrow(Schedule3)),
+  Correct = logical(nrow(Schedule3))
+)
+for (i in 1:nrow(Schedule3)) {
+  if (Schedule3$Home[i] %in% names(Team_name_corrections)) {
+    Schedule3$Home[i] <- Team_name_corrections[Schedule3$Home[i]]
+  } else {
+    Schedule3$Home[i] <- Schedule3$Home[i]
+  }
+  if (Schedule3$Away[i] %in% names(Team_name_corrections)) {
+    Schedule3$Away[i] <- Team_name_corrections[Schedule3$Away[i]]
+  } else {
+    Schedule3$Away[i] <- Schedule3$Away[i]
+  }
+}
+
+
+for (i in 1:nrow(Schedule3)) {              #predict all games for week 3
+  game <- Schedule3[i, ]
+  result<- (Predict_Game(game$Home, game$Away))
+  week3prediction$Prediction_Value[i] <- result
+  if (is.na(result)) {
+    print(paste("Issue:", game$Home, "vs", game$Away))
+  }
+  if (result >= 0) {
+    week3prediction$Winner[i] <- game$Home
+    week3prediction$Loser[i]<- game$Away
+  }else{
+    week3prediction$Winner[i] <- game$Away
+    week3prediction$Loser[i]<- game$Home
+  }
+}
+'''
+
+
+
+
