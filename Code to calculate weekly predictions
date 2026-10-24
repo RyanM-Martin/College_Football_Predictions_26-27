@@ -1,5 +1,5 @@
 Example of base Code for weekly predictions
-'''{r}
+```{r}
 library(dplyr)
 library(stringr)
 
@@ -18,11 +18,11 @@ Team_name_corrections<- c(
   "Central Florida" = "UCF"        
 ) #the data from the website uses different spellings for these schools in the stats, and in the scedule databases.
 
-'''
+```
 
 Week 3 Predictions
 
-'''
+```
 week3prediction <- data.frame(
   Winner = character(nrow(Schedule3)),
   Loser = character(nrow(Schedule3)),
@@ -58,7 +58,7 @@ for (i in 1:nrow(Schedule3)) {              #predict all games for week 3
     week3prediction$Loser[i]<- game$Home
   }
 }
-'''
+```
 
 
 
