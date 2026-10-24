@@ -1,0 +1,76 @@
+Example of the base prediction method that uses expected point differential against an "average" team adjusted for strength of schedule,
+and with added bonus for # of top 10 and top 25 teams beat.
+
+Step 1: Preparing data
+```{r}
+install.packages("readxl")   #install package needed to read excel files
+library(readxl)
+
+#create datasets for each side of the ball
+Offense<- read_excel("Week 1 Stats/Offense Week 1.xlsx") 
+Defense<- read_excel("Week 1 Stats/Defense Week 1.xlsx") 
+ST<- read_excel("Week 1 Stats/Special Teams Week 1.xlsx") #read stats into datasets
+
+df_list <- list(Offense, Defense, ST)
+Week1 <- df_list %>% reduce(full_join, by = "School")  #join datasets to create week 1 stats database
+Scedule1 <- read_excel("CFB Schedule.xlsx", sheet = "week 1 schedule")
+Schedule1$School <- sub("^\\(\\d+\\)\\s*", "", Schedule1$Winner)    #remove ranking values from the name of the team
+Schedule1$School <- sub("^\\(\\d+\\)\\s*", "", Schedule1$Loser)
+Schedule1$Home <- trimws(Schedule1$Home)    #trim whitespace for all values, so that any extra spaces accidentally added are removed
+Schedule1$Away <- trimws(Schedule1$Away)
+Power_rankings$School <- trimws(
+  Power_rankings$School
+)
+```
+
+Create Prediction method
+```
+Predict_Game<- function(SchoolA, SchoolB){
+  if (!(SchoolA %in% Power_rankings$School)){
+    return(-1)
+  }
+  if (!(SchoolB %in% Power_rankings$School)){
+    return(1)
+  } 
+  teamA<- Power_rankings[Power_rankings$School == SchoolA,][1,]
+  teamB<- Power_rankings[Power_rankings$School == SchoolB,][1,]
+
+  Awins<- Week_12_Scedule[Week_12_Scedule$Winner == SchoolA,]
+  Bwins<- Week_12_Scedule[Week_12_Scedule$Winner == SchoolB,]
+  A25<-0
+  A10<-0
+  B25<-0
+  B10<-0
+  for (l in unlist(Awins$Loser)){
+    LoserRankA <- Power_rankings[Power_rankings$School == l,][1,"APCurr"]
+    if (!is.na(LoserRankA)) {
+      if (LoserRankA>10){
+        A25<-A25+1
+      } else if (LoserRankA> 0){
+        A10<-A10+1
+      }
+    }
+  }
+  for (i in unlist(Bwins$Loser)){
+    LoserRankB<- Power_rankings[Power_rankings$School == i,][1,"APCurr"]
+    if (!is.na(LoserRankB)) {
+      if (LoserRankB>10){
+        B25<-B25+1
+      } else if (LoserRankB > 0){        
+        B10<-B10+1
+      }
+    }
+  }
+  Abase<- (teamA$PwrRk)
+  Bbase<- (teamB$PwrRk)
+  Arate<- Abase+5*A25+10*A10
+  Brate<- Bbase+5*B25+10*B10
+  prediction<- Arate-Brate
+  return(prediction)
+}
+```
+Example usage
+
+```
+Predict_Game(Auburn, Georgia)
+```
