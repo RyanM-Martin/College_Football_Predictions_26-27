@@ -2,6 +2,6 @@
 
 # Current Stats:
 
-number correct: 290/412
+Number Correct: 290/412
 
-percentage: 70.39%
+Percentage: 70.39%
