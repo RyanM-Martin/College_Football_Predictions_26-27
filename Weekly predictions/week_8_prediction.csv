@@ -1,0 +1,63 @@
+Winner,Loser,Prediction_Value,Correct
+Delaware,Middle Tennessee State,5.460000000000003,FALSE
+Jacksonville State,Florida International,-2.0200000000000014,FALSE
+Kennesaw State,Missouri State,8.759999999999998,FALSE
+Sam Houston,Western Kentucky,-4.580000000000002,FALSE
+Texas State,Colorado State,-14.779999999999998,FALSE
+East Carolina,UAB,2.3800000000000003,FALSE
+Georgia Southern,Old Dominion,11.489999999999998,FALSE
+Appalachian State,Coastal Carolina,4.299999999999997,FALSE
+Memphis,Tulane,8.17,FALSE
+Purdue,Washington,-1.6100000000000039,FALSE
+Miami (OH),Akron,-11.559999999999999,FALSE
+Alabama,Tennessee,6.460000000000001,FALSE
+Texas Tech,Arizona State,-24.279999999999998,FALSE
+Arkansas,Vanderbilt,2.4999999999999982,FALSE
+Arkansas State,Southern Mississippi,8.850000000000001,FALSE
+Georgia,Auburn,-12.16,FALSE
+Bowling Green,Ball State,-1.0699999999999985,FALSE
+Clemson,Charleston Southern,-1,FALSE
+Temple,Charlotte,-15.780000000000001,FALSE
+Cincinnati,West Virginia,2.5200000000000005,FALSE
+Texas A&M,Citadel,-1,FALSE
+Stanford,Elon,-1,FALSE
+Texas,Florida,-5.589999999999996,FALSE
+Army,Florida Atlantic,-12.309999999999999,FALSE
+Miami (FL),Florida State,-30.989999999999995,FALSE
+Fresno State,San Diego State,9.08,FALSE
+James Madison,Georgia State,-13.689999999999996,FALSE
+Virginia Tech,Georgia Tech,-11.66,FALSE
+Kansas State,Kansas,-5.0600000000000005,FALSE
+South Florida,Kent State,-25.020000000000003,FALSE
+Kentucky,Oklahoma,1.5000000000000036,FALSE
+Louisiana Tech,Louisiana-Monroe,32.56,FALSE
+Louisville,Syracuse,14.010000000000005,FALSE
+Massachusetts,Buffalo,7.030000000000001,FALSE
+LSU,Mississippi State,-13.399999999999999,FALSE
+Ole Miss,Missouri,-10.829999999999998,FALSE
+UTSA,Navy,-4.849999999999999,FALSE
+Oregon,Nebraska,-13.440000000000001,FALSE
+North Dakota State,Nevada,-14.129999999999999,FALSE
+Air Force,Nevada-Las Vegas,-5.35,FALSE
+New Mexico,Hawaii,33.27,FALSE
+Duke,North Carolina,-4.07,FALSE
+Wyoming,Northern Illinois,-10.730000000000006,FALSE
+Northwestern,Michigan State,11.689999999999998,FALSE
+BYU,Notre Dame,-4.199999999999996,FALSE
+Ohio,Sacramento State,24.189999999999998,FALSE
+Ohio State,Indiana,13.499999999999993,FALSE
+Houston,Oklahoma State,-5.839999999999993,FALSE
+Penn State,Michigan,4.6899999999999995,FALSE
+Pitt,Boston College,18.65,FALSE
+Maryland,Rutgers,-0.10000000000000497,FALSE
+San Jose State,UTEP,14.399999999999997,FALSE
+Baylor,Texas Christian,-0.9199999999999999,FALSE
+Toledo,Eastern Michigan,16.709999999999994,FALSE
+Louisiana,Troy,-12.879999999999999,FALSE
+Tulsa,Rice,14.040000000000001,FALSE
+Utah,Colorado,22.35,FALSE
+SMU,Virginia,-0.3100000000000005,FALSE
+Wake Forest,California,19.820000000000004,FALSE
+Oregon State,Washington State,-23.78,FALSE
+Western Michigan,Central Michigan,15.330000000000002,FALSE
+UCLA,Wisconsin,-9.209999999999997,FALSE
