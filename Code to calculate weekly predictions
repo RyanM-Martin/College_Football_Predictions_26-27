@@ -48,7 +48,7 @@ for (i in 1:nrow(Schedule3)) {              #predict all games for week 3
   result<- (Predict_Game(game$Home, game$Away))
   week3prediction$Prediction_Value[i] <- result
   if (is.na(result)) {
-    print(paste("Issue:", game$Home, "vs", game$Away))
+    print(paste("null", game$Home, "vs", game$Away))
   }
   if (result >= 0) {
     week3prediction$Winner[i] <- game$Home
