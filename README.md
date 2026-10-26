@@ -74,61 +74,61 @@ Percentage: 57.14%
 |Winner                |Loser                  | Prediction_Value|Correct |
 |:---------------------|:----------------------|----------------:|:-------|
 |Delaware              |Missouri State         |            10.93|TRUE    |
-|South Alabama         |Marshall               |           -10.49|FALSE   |
-|Florida International |Middle Tennessee State |            -8.52|FALSE   |
+|South Alabama         |Marshall               |           10.49|FALSE   |
+|Florida International |Middle Tennessee State |            8.52|FALSE   |
 |New Mexico State      |Sam Houston            |             0.95|TRUE    |
-|James Madison         |Appalachian State      |           -18.14|FALSE   |
+|James Madison         |Appalachian State      |           18.14|FALSE   |
 |Liberty               |Kennesaw State         |            17.59|TRUE    |
 |Memphis               |East Carolina          |            11.35|TRUE    |
 |Air Force             |Wyoming                |            16.16|FALSE   |
 |Army                  |Tulsa                  |             8.06|TRUE    |
 |Duke                  |Virginia               |             5.69|TRUE    |
-|Connecticut           |Massachusetts          |            -5.30|TRUE    |
+|Connecticut           |Massachusetts          |            5.30|TRUE    |
 |North Carolina State  |Stanford               |            20.37|FALSE   |
 |Akron                 |Kent State             |             2.55|FALSE   |
 |Baylor                |Kansas                 |             6.88|FALSE   |
 |Boise State           |Washington State       |            18.21|TRUE    |
-|Georgia Tech          |Boston College         |            -3.59|FALSE   |
-|Buffalo               |Bowling Green          |            -6.03|TRUE    |
+|Georgia Tech          |Boston College         |            3.59|FALSE   |
+|Buffalo               |Bowling Green          |            6.03|TRUE    |
 |BYU                   |UCF                    |            23.32|FALSE   |
-|SMU                   |California             |            -8.52|FALSE   |
-|Oklahoma State        |Colorado               |           -16.92|TRUE    |
-|Ohio                  |Eastern Michigan       |           -12.76|TRUE    |
+|SMU                   |California             |            8.52|FALSE   |
+|Oklahoma State        |Colorado               |           16.92|TRUE    |
+|Ohio                  |Eastern Michigan       |           12.76|TRUE    |
 |Georgia State         |Arkansas State         |             8.89|FALSE   |
 |Hawaii                |Northern Illinois      |             9.53|TRUE    |
 |Houston               |Utah                   |             0.41|FALSE   |
 |Indiana               |Michigan               |            23.53|TRUE    |
 |Iowa                  |Minnesota              |            10.60|FALSE   |
-|Arizona               |Iowa State             |            -1.73|TRUE    |
+|Arizona               |Iowa State             |            1.73|TRUE    |
 |Kansas State          |Arizona State          |            14.17|FALSE   |
 |Louisiana             |Southern Mississippi   |            17.95|FALSE   |
 |LSU                   |Auburn                 |             7.87|FALSE   |
-|Troy                  |Louisiana-Monroe       |           -16.57|FALSE   |
+|Troy                  |Louisiana-Monroe       |           16.57|FALSE   |
 |Miami (OH)            |Central Michigan       |             6.80|TRUE    |
-|UCLA                  |Michigan State         |           -19.43|TRUE    |
-|Texas                 |Ole Miss               |            -8.48|TRUE    |
-|New Mexico            |North Dakota State     |            -9.72|TRUE    |
+|UCLA                  |Michigan State         |           19.43|TRUE    |
+|Texas                 |Ole Miss               |            8.48|TRUE    |
+|New Mexico            |North Dakota State     |            9.72|TRUE    |
 |North Texas           |Navy                   |            11.93|TRUE    |
 |Oklahoma              |Mississippi State      |             0.29|TRUE    |
-|Louisiana Tech        |Old Dominion           |           -19.15|TRUE    |
+|Louisiana Tech        |Old Dominion           |           19.15|TRUE    |
 |Oregon                |Illinois               |            28.47|FALSE   |
-|Miami (FL)            |Pitt                   |           -23.69|TRUE    |
-|Florida Atlantic      |Rice                   |            -9.79|TRUE    |
-|Northwestern          |Rutgers                |           -16.72|TRUE    |
-|Ball State            |Sacramento State       |            -5.54|TRUE    |
+|Miami (FL)            |Pitt                   |           23.69|TRUE    |
+|Florida Atlantic      |Rice                   |            9.79|TRUE    |
+|Northwestern          |Rutgers                |           16.72|TRUE    |
+|Ball State            |Sacramento State       |            5.54|TRUE    |
 |San Diego State       |Colorado State         |             0.75|FALSE   |
-|Nevada                |San Jose State         |            -4.10|TRUE    |
-|Wisconsin             |USC                    |            -1.23|TRUE    |
-|North Carolina        |Syracuse               |            -4.44|FALSE   |
+|Nevada                |San Jose State         |            4.10|TRUE    |
+|Wisconsin             |USC                    |            1.23|TRUE    |
+|North Carolina        |Syracuse               |            4.44|FALSE   |
 |Tennessee             |South Carolina         |             4.54|FALSE   |
-|Alabama               |Texas A&M              |           -19.51|TRUE    |
+|Alabama               |Texas A&M              |           19.51|TRUE    |
 |Texas Tech            |Cincinnati             |            16.76|FALSE   |
 |UTSA                  |Tulane                 |             4.68|FALSE   |
-|Texas State           |Utah State             |           -18.56|TRUE    |
-|Kentucky              |Vanderbilt             |           -21.30|TRUE    |
+|Texas State           |Utah State             |           18.56|TRUE    |
+|Kentucky              |Vanderbilt             |           21.30|TRUE    |
 |Virginia Tech         |Clemson                |             6.59|TRUE    |
-|Texas Christian       |West Virginia          |           -10.07|FALSE   |
-|Toledo                |Western Michigan       |            -2.38|TRUE    |
+|Texas Christian       |West Virginia          |           10.07|FALSE   |
+|Toledo                |Western Michigan       |            2.38|TRUE    |
 
 # Week 8 Results
 Number Correct: 39/62
