@@ -3,46 +3,92 @@ and with added bonus for # of top 10 and top 25 teams beat.
 
 Step 1: Preparing data
 ```{r}
+library(dplyr)
 install.packages("readxl")   #install package needed to read excel files
 library(readxl)
+setwd("C:/Users/Ryan/Deskt/MyProject")
 
-#create datasets for each side of the ball
-Offense<- read_excel("Week 1 Stats/Offense Week 1.xlsx") 
-Defense<- read_excel("Week 1 Stats/Defense Week 1.xlsx") 
-ST<- read_excel("Week 1 Stats/Special Teams Week 1.xlsx") #read stats into datasets
+####################################################################Update weekly##########################################################################
+###create full schedule of results from the whole year up till this point
+Schedule12 <- read_excel("CFB Schedule.xlsx", sheet = "Week 1-2") 
+Schedule3<- read_excel("CFB Schedule.xlsx", sheet = "Week 3")
+Schedule4<- read_excel("CFB Schedule.xlsx", sheet = "Week 4")
+Schedule5<- read_excel("CFB Schedule.xlsx", sheet = "Week 5")
+Schedule6<- read_excel("CFB Schedule.xlsx", sheet = "Week 6")
+Schedule7<- read_excel("CFB Schedule.xlsx", sheet = "Week 7")
+Schedule8<- read_excel("CFB Schedule.xlsx", sheet = "Week 8")
+Schedule9<- read_excel("CFB Schedule.xlsx", sheet = "Week 9")        
 
-df_list <- list(Offense, Defense, ST)
-Week1 <- df_list %>% reduce(full_join, by = "School")  #join datasets to create week 1 stats database
-Scedule1 <- read_excel("CFB Schedule.xlsx", sheet = "week 1 schedule")
-Schedule1$School <- sub("^\\(\\d+\\)\\s*", "", Schedule1$Winner)    #remove ranking values from the name of the team
-Schedule1$School <- sub("^\\(\\d+\\)\\s*", "", Schedule1$Loser)
-Schedule1$Home <- trimws(Schedule1$Home)    #trim whitespace for all values, so that any extra spaces accidentally added are removed
-Schedule1$Away <- trimws(Schedule1$Away)
-Power_rankings$School <- trimws(
-  Power_rankings$School
+sced_list <- list(Schedule12, Schedule3, Schedule47, Schedule8, Schedule9)   
+full_schedule<- bind_rows(sced_list)
+
+full_schedule$Winner <- trimws(full_schedule$Winner)    #trim whitespace for all values to make sure there are no accidental spaces
+full_schedule$Loser <- trimws(full_schedule$Loser)
+full_schedule <- full_schedule %>%
+  mutate(
+    Winner = str_squish(str_remove(Winner, "^[^\\p{L}]+")),       #removes all charcters before the first letter in every team name to remove ranking numbers
+    Loser = str_squish(str_remove(Loser, "^[^\\p{L}]+"))          #ex:    "(18)LSU" becomes >>> "LSU", only the schedules have the ranking numbers, not the database for the power rankings
+  )
+
+Team_name_corrections<- c(
+  "Alabama-Birmingham" = "UAB",           #many of the team names in the Schedule section are not abbreviated, while some in the power rankings are
+  "Brigham Young" = "BYU",                #this code fixes all suxh errors
+  "Louisiana State" = "LSU",          
+  "Mississippi" = "Ole Miss",                          
+  "Pittsburgh" = "Pitt",                  
+  "Southern California" = "USC",      
+  "Southern Methodist" = "SMU",        
+  "Texas-El Paso" = "UTEP",              
+  "Texas-San Antonio"  = "UTSA",     
+  "Central Florida" = "UCF"        
 )
+for (i in 1:nrow(full_schedule)) {
+  if (full_schedule$Winner[i] %in% names(Team_name_corrections)) {
+    full_schedule$Winner[i] <- Team_name_corrections[full_schedule$Winner[i]]
+  } else {
+    full_schedule$Winner[i] <- full_schedule$Winner[i]
+  }
+  if (full_schedule$Loser[i] %in% names(Team_name_corrections)) {
+    full_schedule$Loser[i] <- Team_name_corrections[full_schedule$Loser[i]]
+  } else {
+    full_schedule$Loser[i] <- full_schedule$Loser[i]
+  }
+}
+
+
+
+#####power rankings
+Power_rankings<- read_excel("Power rankings.xlsx") #the Power rankings excel spreadsheet is updated every week with the teams stats
+Power_rankings$School <- trimws(Power_rankings$School)    #the base power ranking used in the prediction method below, is automatically calculated for each team when data is entered into excel.
+#the base power ranking is the expected win margin of a team adjusted for strength of schedule with the basic calculation: Off-Def+SOS in Power_rankings
+#Off and Def are the teams average points scored and allowed per game respectively, and SOS is the average point differential of a team on their schedule vs the league average"
+
 ```
+
+
+
+
 
 Create Prediction method
 ```
 Predict_Game<- function(SchoolA, SchoolB){
-  if (!(SchoolA %in% Power_rankings$School)){
+  if (!(SchoolA %in% Power_rankings$School)){     #if the team is not in the database, then it is a lower division school, and we automatically set a FBS team to beat a non-FBS team
     return(-1)
   }
   if (!(SchoolB %in% Power_rankings$School)){
     return(1)
   } 
-  teamA<- Power_rankings[Power_rankings$School == SchoolA,][1,]
+  teamA<- Power_rankings[Power_rankings$School == SchoolA,][1,]    #create databases for just the stats of the 2 teams 
   teamB<- Power_rankings[Power_rankings$School == SchoolB,][1,]
 
-  Awins<- Week_12_Scedule[Week_12_Scedule$Winner == SchoolA,]
-  Bwins<- Week_12_Scedule[Week_12_Scedule$Winner == SchoolB,]
-  A25<-0
-  A10<-0
-  B25<-0
-  B10<-0
+  Awins<- full_schedule[full_schedule$Winner == SchoolA,]
+  Bwins<- full_schedule[full_schedule$Winner == SchoolB,]
+  A25<-0    # number of team A's top 25 wins
+  A10<-0    # number of team A's top 10 wins
+  B25<-0    # number of team B's top 25 wins
+  B10<-0    # number of team B's top 10 wins
   for (l in unlist(Awins$Loser)){
-    LoserRankA <- Power_rankings[Power_rankings$School == l,][1,"APCurr"]
+    LoserRankA <- Power_rankings[Power_rankings$School == l,][1,"APCurr"]    #count number of top 10 and 25 wins for both teams
     if (!is.na(LoserRankA)) {
       if (LoserRankA>10){
         A25<-A25+1
@@ -63,7 +109,7 @@ Predict_Game<- function(SchoolA, SchoolB){
   }
   Abase<- (teamA$PwrRk)
   Bbase<- (teamB$PwrRk)
-  Arate<- Abase+5*A25+10*A10
+  Arate<- Abase+5*A25+10*A10  #calculate ratings for A and B, for how many points they are expected to score, weighted by their amount of top 10 and top 25 wins
   Brate<- Bbase+5*B25+10*B10
   prediction<- Arate-Brate
   return(prediction)
@@ -72,5 +118,5 @@ Predict_Game<- function(SchoolA, SchoolB){
 Example usage
 
 ```
-Predict_Game(Auburn, Georgia)
+Predict_Game(Auburn, Georgia) #output : -12.16, means Auburn is favored to lose to Georgia by 12.16 points.
 ```
