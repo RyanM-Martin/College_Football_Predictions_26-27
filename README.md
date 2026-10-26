@@ -1,9 +1,9 @@
 
 # Current Stats:
 
-Number Correct: 322/468
+Number Correct: 325/468
 
-Percentage: 68.8%
+Percentage: 69.44%
 
 # Week 10 prediction
 |Winner               |Loser                  | Prediction_Value|
