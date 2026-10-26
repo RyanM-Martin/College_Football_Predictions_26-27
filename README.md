@@ -68,6 +68,7 @@ Percentage: 68.8%
 # Week 9 Results
 
 Number correct: 32/56
+
 Percentage: 57.14%
 
 |Winner                |Loser                  | Prediction_Value|Correct |
