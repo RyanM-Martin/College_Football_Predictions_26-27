@@ -1,69 +1,74 @@
 
 # Current Stats:
 
-Number Correct: 325/468
+Number Correct: 363/524
 
-Percentage: 69.44%
+Percentage: 69.27%
 
-# Week 10 prediction
-|Winner               |Loser                  | Prediction_Value|
-|:--------------------|:----------------------|----------------:|
-|Delaware             |Western Kentucky       |             7.20|
-|Sam Houston          |Missouri State         |             6.82|
-|Jacksonville State   |New Mexico State       |             5.74|
-|Kennesaw State       |Middle Tennessee State |             2.26|
-|North Texas          |Florida Atlantic       |            11.58|
-|James Madison        |Troy                   |            27.94|
-|UCF                  |Baylor                 |            11.27|
-|Kent State           |Sacramento State       |             6.67|
-|Tulane               |Charlotte              |            19.10|
-|South Florida        |UAB                    |            12.58|
-|Appalachian State    |Georgia Southern       |             0.08|
-|Texas Tech           |Arizona                |             3.92|
-|BYU                  |Arizona State          |            31.99|
-|Army                 |Memphis                |             2.99|
-|Ole Miss             |Auburn                 |             9.22|
-|Duke                 |Boston College         |            11.46|
-|Western Michigan     |Bowling Green          |            18.41|
-|North Carolina State |California             |             8.42|
-|Florida State        |Clemson                |             4.70|
-|Georgia State        |Coastal Carolina       |             5.63|
-|Colorado State       |Utah State             |             4.35|
-|Connecticut          |Air Force              |             5.18|
-|Georgia              |Florida                |            10.87|
-|Liberty              |Florida International  |            11.86|
-|Pitt                 |Georgia Tech           |            16.45|
-|Illinois             |Maryland               |             8.36|
-|Texas Christian      |Kansas                 |             2.81|
-|Kansas State         |Colorado               |            15.10|
-|Louisiana Tech       |South Alabama          |            11.79|
-|Old Dominion         |Marshall               |             0.64|
-|Miami (FL)           |North Carolina         |            32.03|
-|Michigan             |Rutgers                |            11.54|
-|Indiana              |Minnesota              |            24.45|
-|Texas                |Mississippi State      |            27.48|
-|Missouri             |Arkansas               |            20.14|
-|UCLA                 |Nevada                 |            31.19|
-|New Mexico           |San Jose State         |            28.89|
-|Nevada-Las Vegas     |Northern Illinois      |            24.76|
-|Oregon               |Northwestern           |             7.83|
-|Notre Dame           |Navy                   |            39.28|
-|Ohio State           |USC                    |            30.64|
-|Oklahoma State       |Iowa State             |            13.14|
-|Oregon State         |Fresno State           |            14.17|
-|Penn State           |Purdue                 |             7.40|
-|South Carolina       |Oklahoma               |             9.11|
-|SMU                  |Syracuse               |             7.40|
-|Southern Mississippi |Louisiana-Monroe       |            10.05|
-|Louisville           |Stanford               |            32.34|
-|East Carolina        |Temple                 |             0.48|
-|Boise State          |Texas State            |             3.86|
-|North Dakota State   |UTEP                   |            31.13|
-|Utah                 |Cincinnati             |            10.51|
-|Wake Forest          |Virginia               |            11.17|
-|Nebraska             |Washington             |            17.21|
-|San Diego State      |Washington State       |             0.75|
-|Wisconsin            |Iowa                   |             3.80|
+# Week 10 Results
+
+Number Correct: 38/56
+
+Percentage: 67.85%
+
+|Winner               |Loser                  | Prediction_Value|Correct |
+|:--------------------|:----------------------|----------------:|:-------|
+|Delaware             |Western Kentucky       |             7.20|TRUE    |
+|Sam Houston          |Missouri State         |             6.82|FALSE   |
+|Jacksonville State   |New Mexico State       |             5.74|TRUE    |
+|Kennesaw State       |Middle Tennessee State |             2.26|TRUE    |
+|North Texas          |Florida Atlantic       |            11.58|TRUE    |
+|James Madison        |Troy                   |            27.94|FALSE   |
+|UCF                  |Baylor                 |            11.27|FALSE   |
+|Kent State           |Sacramento State       |             6.67|FALSE   |
+|Tulane               |Charlotte              |            19.10|TRUE    |
+|South Florida        |UAB                    |            12.58|TRUE    |
+|Appalachian State    |Georgia Southern       |             0.08|FALSE   |
+|Texas Tech           |Arizona                |             3.92|TRUE    |
+|BYU                  |Arizona State          |            31.99|TRUE    |
+|Army                 |Memphis                |             2.99|FALSE   |
+|Ole Miss             |Auburn                 |             9.22|TRUE    |
+|Duke                 |Boston College         |            11.46|TRUE    |
+|Western Michigan     |Bowling Green          |            18.41|TRUE    |
+|North Carolina State |California             |             8.42|TRUE    |
+|Florida State        |Clemson                |             4.70|FALSE   |
+|Georgia State        |Coastal Carolina       |             5.63|FALSE   |
+|Colorado State       |Utah State             |             4.35|FALSE   |
+|Connecticut          |Air Force              |             5.18|FALSE   |
+|Georgia              |Florida                |            10.87|TRUE    |
+|Liberty              |Florida International  |            11.86|TRUE    |
+|Pitt                 |Georgia Tech           |            16.45|TRUE    |
+|Illinois             |Maryland               |             8.36|TRUE    |
+|Texas Christian      |Kansas                 |             2.81|TRUE    |
+|Kansas State         |Colorado               |            15.10|FALSE   |
+|Louisiana Tech       |South Alabama          |            11.79|TRUE    |
+|Old Dominion         |Marshall               |             0.64|FALSE   |
+|Miami (FL)           |North Carolina         |            32.03|TRUE    |
+|Michigan             |Rutgers                |            11.54|TRUE    |
+|Indiana              |Minnesota              |            24.45|TRUE    |
+|Texas                |Mississippi State      |            27.48|TRUE    |
+|Missouri             |Arkansas               |            20.14|TRUE    |
+|UCLA                 |Nevada                 |            31.19|TRUE    |
+|New Mexico           |San Jose State         |            28.89|TRUE    |
+|Nevada-Las Vegas     |Northern Illinois      |            24.76|TRUE    |
+|Oregon               |Northwestern           |             7.83|TRUE    |
+|Notre Dame           |Navy                   |            39.28|TRUE    |
+|Ohio State           |USC                    |            30.64|FALSE   |
+|Oklahoma State       |Iowa State             |            13.14|FALSE   |
+|Oregon State         |Fresno State           |            14.17|FALSE   |
+|Penn State           |Purdue                 |             7.40|TRUE    |
+|South Carolina       |Oklahoma               |             9.11|TRUE    |
+|SMU                  |Syracuse               |             7.40|FALSE   |
+|Southern Mississippi |Louisiana-Monroe       |            10.05|TRUE    |
+|Louisville           |Stanford               |            32.34|TRUE    |
+|East Carolina        |Temple                 |             0.48|TRUE    |
+|Boise State          |Texas State            |             3.86|TRUE    |
+|North Dakota State   |UTEP                   |            31.13|TRUE    |
+|Utah                 |Cincinnati             |            10.51|TRUE    |
+|Wake Forest          |Virginia               |            11.17|TRUE    |
+|Nebraska             |Washington             |            17.21|FALSE   |
+|San Diego State      |Washington State       |             0.75|TRUE    |
+|Wisconsin            |Iowa                   |             3.80|FALSE   |
 
 # Week 9 Results
 
