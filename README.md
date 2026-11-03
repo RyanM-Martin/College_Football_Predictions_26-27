@@ -272,10 +272,7 @@ Percentage: 74.14%
 |Virginia              |Syracuse             |             2.14|TRUE    |
 |Wake Forest           |North Carolina State |            12.72|TRUE    |
 |Western Michigan      |Kent State           |            22.98|TRUE    |
-> pretable <- week6prediction  #removes the 4th row of weekly prediction
-> pretable$Prediction_Value <- abs(pretable$Prediction_Value)# Convert weekly predictions to a Markdown table, to copy into github readme
-> md_table <- kable(pretable, format = "markdown", row.names = FALSE)# Print it to the console to copy, or write it directly to README.md
-> print(md_table)
+
 
 # Week 6 Results
 
@@ -344,10 +341,7 @@ Percentage: 77.97%
 |Western Michigan   |Buffalo                |            16.29|TRUE    |
 |Wisconsin          |Michigan State         |            12.49|TRUE    |
 |San Jose State     |Hawaii                 |             6.15|TRUE    |
-> pretable <- week5prediction  #removes the 4th row of weekly prediction
-> pretable$Prediction_Value <- abs(pretable$Prediction_Value)# Convert weekly predictions to a Markdown table, to copy into github readme
-> md_table <- kable(pretable, format = "markdown", row.names = FALSE)# Print it to the console to copy, or write it directly to README.md
-> print(md_table)
+
 
 # Week 5 Results
 
@@ -428,10 +422,7 @@ Percentage: 84.5%
 |Western Kentucky      |Mercyhurst             |             1.00|TRUE    |
 |Wisconsin             |Penn State             |             2.82|TRUE    |
 |Wyoming               |Hawaii                 |             1.48|TRUE    |
-> pretable <- week4prediction  #removes the 4th row of weekly prediction
-> pretable$Prediction_Value <- abs(pretable$Prediction_Value)# Convert weekly predictions to a Markdown table, to copy into github readme
-> md_table <- kable(pretable, format = "markdown", row.names = FALSE)# Print it to the console to copy, or write it directly to README.md
-> print(md_table)
+
 
 # Week 4 Results
 
